@@ -1,0 +1,85 @@
+# Training config
+training:
+  epochs: 1000
+  batch_size: 7   # 14
+  pretrained_separator:
+  train_minus_one: no
+  loss_combine_sources: yes
+  loss_use_multidomain: yes
+  mix_coef: 10.0
+  val_dur: 80.0
+
+# Optim config
+optim:
+  optimizer: adam
+  lr: 0.0001
+  patience: 20
+  lr_decay_patience: 80
+  lr_decay_gamma: 0.3
+  weight_decay: 0.00001
+
+# Data config
+data:
+  train_on: synthsod  # Only synthsod and ensembleset are implemented
+  synthsod_dataset_path: data/SynthSOD
+  ensembleset_dataset_path: data/EnsembleSet
+  aalto_dataset_path: data/PHENICX-Anechoic
+  urmp_dataset_path: data/URMP
+  train_size_limit:
+  random_track_mix: no
+  output: x-umx_outputs
+  sample_rate: 44100
+  num_workers: 16
+  seed: 42
+  seq_dur: 6.0
+  samples_per_track: 64
+  source_augmentations:
+    - gain
+    - channelswap
+  sources:  # List of sources to be included in the input mixtures
+    - Violin_1
+    - Violin_2
+    - Viola
+    - Cello
+    - Bass
+    - Flute
+    - Piccolo
+    - Clarinet
+    - Oboe
+    - coranglais
+    - Bassoon
+    - Horn
+    - Trumpet
+    - Trombone
+    - Tuba
+    - Harp
+    - Timpani
+    - untunedpercussion
+  join_violins: yes
+  targets:  # List of sources to be separated
+    - Violin
+    - Viola
+    - Cello
+    - Bass
+    - Flute
+    - Clarinet
+    - Oboe
+    - Bassoon
+    - Horn
+    - Trumpet
+    - Trombone
+    - Tuba
+    - Harp
+    - Timpani
+    - untunedpercussion
+# Network config
+model:
+  pretrained: null
+  bidirectional: yes
+  window_length: 4096
+  in_chan: 4096
+  nhop: 1024
+  hidden_size: 512
+  bandwidth: 16000
+  nb_channels: 1
+  spec_power: 1
