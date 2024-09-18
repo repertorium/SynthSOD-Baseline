@@ -14,8 +14,8 @@ is also available in [GitHub](https://github.com/repertorium/HQ-SOD-generator).
 - [Data](#data)
 - [Training](#training)
 - [Evaluation](#evaluation)
-- [Pretrained models](#pretrained_models)
-- [Known issues](#known_issues)
+- [Pretrained models](#pretrained-models)
+- [Known issues](#known-issues)
 - [License](#license)
 - [References](#references)
 
