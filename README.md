@@ -56,8 +56,8 @@ woodwinds (flute, clarinet, oboe, and bassoon), brass (horn, trumpet, trombone, 
 timpani, and untuned percussion). We provide 4 bash script to train the models:
 
 ```bash
-run_training_string.sh
-run_training_woodwind.sh
+run_training_strings.sh
+run_training_woodwinds.sh
 run_training_brass.sh
 run_training_percussion.sh
 ```
@@ -66,7 +66,7 @@ These scripts also allow to train the models on the EnsembleSet dataset by calli
 
 ```bash
 run_training_strings.sh --train_on EnsembleSet --tag ensembleset_strings
-run_training_woodwind.sh --train_on EnsembleSet --tag ensembleset_woodwind
+run_training_woodwinds.sh --train_on EnsembleSet --tag ensembleset_woodwind
 run_training_brass.sh --train_on EnsembleSet --tag ensembleset_brass
 run_training_percussion.sh --train_on EnsembleSet --tag ensembleset_percussion
 ```
