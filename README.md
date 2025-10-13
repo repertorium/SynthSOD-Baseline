@@ -108,4 +108,6 @@ The software is subject to AGPL-3.0 license and comes with no warranty. If you f
 
 ## References
 
-[1] Garcia-Martinez J., Diaz-Guerra, D., Politis, A., Virtanen, T., Carabias-Orti, J.J., & Vera-Candeas, P. SynthSOD: Developing an Heterogeneous Dataset for Orchestra Music Source Separation [[arXiv preprint](https://doi.org/10.48550/arXiv.2409.10995)]
+[1] J. Garcia-Martinez, D. Diaz-Guerra, A. Politis, T. Virtanen, J. J. Carabias-Orti and P. Vera-Candeas, "SynthSOD: Developing an Heterogeneous Dataset for 
+Orchestra Music Source Separation," in IEEE Open Journal of Signal Processing, vol. 6, pp. 129-137, 2025 [[DOI](https://doi.org/10.1109/OJSP.2025.3528361)]
+[[arXiv preprint](https://doi.org/10.48550/arXiv.2409.10995)]
